@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog blk_mem_gen_v8_4_2  \
+"../../../../09_CPU_Interrupt.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v" \
+
+verilog xil_defaultlib  \
+"../../../../Data_RAM/sim/Data_RAM.v" \
+"../../../../Inst_ROM/sim/Inst_ROM.v" \
+"../../../../ALU.v" \
+"../../../../ALU_Shift.v" \
+"../../../../CPSR.v" \
+"../../../../CPU.v" \
+"../../../../Inst.v" \
+"../../../../RegFile.v" \
+"../../../../Shift.v" \
+"../../../../Stack.v" \
+"../../../../request.v" \
+"../../../../testcpu.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

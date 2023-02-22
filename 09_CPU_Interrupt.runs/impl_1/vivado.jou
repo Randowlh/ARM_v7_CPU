@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Jul  3 01:24:15 2021
+# Process ID: 3808
+# Current directory: C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/09_CPU_Interrupt.runs/impl_1
+# Command line: vivado.exe -log board_cpu.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source board_cpu.tcl -notrace
+# Log file: C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/09_CPU_Interrupt.runs/impl_1/board_cpu.vdi
+# Journal file: C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/09_CPU_Interrupt.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source board_cpu.tcl -notrace

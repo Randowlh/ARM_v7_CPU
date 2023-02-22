@@ -1,0 +1,103 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jul  3 01:24:49 2021
+| Host         : LAPTOP-Q11MFFNG running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file board_cpu_control_sets_placed.rpt
+| Design       : board_cpu
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    25 |
+|    Minimum number of control sets                        |    25 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   114 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    25 |
+| >= 0 to < 4        |    10 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              97 |           48 |
+| No           | No                    | Yes                    |             102 |           53 |
+| No           | Yes                   | No                     |               1 |            1 |
+| Yes          | No                    | No                     |              28 |            9 |
+| Yes          | No                    | Yes                    |              74 |           33 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------+----------------------------------------------+-----------------------------------+------------------+----------------+--------------+
+|               Clock Signal               |                 Enable Signal                |          Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------------------+----------------------------------------------+-----------------------------------+------------------+----------------+--------------+
+| ~cpu/CPSR_Instance/D_CPSR_7_0/Q[1]       |                                              | cpu/INTA_irq                      |                1 |              1 |         1.00 |
+| ~cpu/CPSR_Instance/D_CPSR_7_0/Q[0]       |                                              | cpu/INTA_fiq_reg_n_1              |                1 |              1 |         1.00 |
+|  swb_IBUF_BUFG[4]                        |                                              | cpu/request_Instance/D2/clr00_out |                1 |              1 |         1.00 |
+|  swb_IBUF_BUFG[6]                        |                                              | data[0]_i_1_n_1                   |                1 |              1 |         1.00 |
+|  swb_IBUF_BUFG[3]                        |                                              | cpu/request_Instance/D4/clr0      |                1 |              1 |         1.00 |
+|  swb_IBUF_BUFG[1]                        | cpu/Inst_Instance/FSM_sequential_ST_reg[2]   | swb_IBUF[2]                       |                1 |              1 |         1.00 |
+|  swb_IBUF_BUFG[1]                        | cpu/Inst_Instance/FSM_sequential_ST_reg[4]_1 | swb_IBUF[2]                       |                1 |              1 |         1.00 |
+|  cpu/clk_tmp                             |                                              |                                   |                1 |              1 |         1.00 |
+| ~clk_IBUF_BUFG                           |                                              |                                   |                1 |              3 |         3.00 |
+|  swb_IBUF_BUFG[1]                        |                                              |                                   |                1 |              3 |         3.00 |
+|  cpu/CPSR_Instance/D_CPSR_31_28/clk0     |                                              | swb_IBUF[2]                       |                3 |              4 |         1.33 |
+|  cpu/CPSR_Instance/D_CPSR_7_0/clk022_out |                                              | swb_IBUF[2]                       |                1 |              5 |         5.00 |
+|  swb_IBUF_BUFG[1]                        | cpu/Inst_Instance/E[0]                       | swb_IBUF[2]                       |                2 |              8 |         4.00 |
+|  cpu/CPSR_Instance/D_SPSR_fiq/clk018_out |                                              | swb_IBUF[2]                       |                2 |              9 |         4.50 |
+|  cpu/CPSR_Instance/D_SPSR_svc/clk010_out |                                              | swb_IBUF[2]                       |                4 |              9 |         2.25 |
+|  cpu/CPSR_Instance/D_SPSR_irq/clk016_out |                                              | swb_IBUF[2]                       |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                           |                                              |                                   |                3 |             11 |         3.67 |
+|  cpu/CPSR_Instance/D_CPSR_7_0/E[0]       |                                              |                                   |                4 |             12 |         3.00 |
+| ~swb_IBUF_BUFG[1]                        | cpu/Inst_Instance/IR0                        |                                   |                9 |             28 |         3.11 |
+|  swb_IBUF_BUFG[1]                        |                                              | swb_IBUF[2]                       |               19 |             30 |         1.58 |
+|  INTA                                    |                                              | swb_IBUF[2]                       |               17 |             32 |         1.88 |
+|  n_0_385_BUFG                            |                                              |                                   |               20 |             32 |         1.60 |
+| ~swb_IBUF_BUFG[1]                        | cpu/led_OBUF[6]                              | swb_IBUF[2]                       |               15 |             32 |         2.13 |
+| ~swb_IBUF_BUFG[1]                        | cpu/LF_reg_n_1                               | swb_IBUF[2]                       |               14 |             32 |         2.29 |
+|  swb_IBUF_BUFG[6]                        |                                              |                                   |               18 |             35 |         1.94 |
++------------------------------------------+----------------------------------------------+-----------------------------------+------------------+----------------+--------------+
+
+

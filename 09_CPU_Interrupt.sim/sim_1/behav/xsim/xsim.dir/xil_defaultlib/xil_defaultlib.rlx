@@ -1,0 +1,17 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/09_CPU_Interrupt.sim/sim_1/behav/xsim/glbl.v,1625243457,verilog,,,,glbl,,,,,,,,
+C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/ALU.v,1625243457,verilog,,C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/ALU_Shift.v,,ALU,,,,,,,,
+C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/ALU_Shift.v,1625243457,verilog,,C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/CPSR.v,,ALU_Shift,,,,,,,,
+C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/CPSR.v,1625243457,verilog,,C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/CPU.v,,Reg_CPSR;d_flip_flop_32;d_flip_flop_4;d_flip_flop_8;d_flip_flop_8_2,,,,,,,,
+C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/CPU.v,1625247389,verilog,,C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/Inst.v,,CPU,,,,,,,,
+C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/Data_RAM/sim/Data_RAM.v,1625243457,verilog,,C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/Inst_ROM/sim/Inst_ROM.v,,Data_RAM,,,,,,,,
+C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/Inst.v,1625243457,verilog,,C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/RegFile.v,,Inst,,,,,,,,
+C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/Inst_ROM/sim/Inst_ROM.v,1625243457,verilog,,C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/ALU.v,,Inst_ROM,,,,,,,,
+C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/RegFile.v,1625243457,verilog,,C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/Shift.v,,register_pile,,,,,,,,
+C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/Shift.v,1625243457,verilog,,C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/Stack.v,,Shift,,,,,,,,
+C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/Stack.v,1625243457,verilog,,C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/request.v,,Stack,,,,,,,,
+C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/request.v,1625243457,verilog,,C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/testcpu.v,,d_flip_flop;request,,,,,,,,
+C:/Users/11148/Desktop/jizu/09_CPU_Interrupt/testcpu.v,1625243457,verilog,,,,testcpu,,,,,,,,
